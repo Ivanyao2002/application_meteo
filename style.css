@@ -6,7 +6,8 @@ html, body {
   }
   
   #ville {
-    text-transform: capitalize;
+    text-transform: capitalize; 
+    /* Mettre la prémière lettre du nom de la vielle en majuscule */
   }
   
   #temperature {
@@ -16,4 +17,8 @@ html, body {
   #changer {
     background: rgba(178, 223, 251, .3);
     cursor: pointer;
+  }
+
+  .row{
+    margin-top: 50px;
   }
