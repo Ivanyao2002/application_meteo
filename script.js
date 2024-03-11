@@ -6,6 +6,7 @@
 /*q - pour spécifier la ville (ici la merveilleuse ville de Saint-Saulve)
 
 appid - pour spécifier votre clé secrète 
+(9745b272e6f312ca99794a979760245c)
 
 units - pour spécifier que nous voulons la température en Celsius*/
 
@@ -17,7 +18,7 @@ let changer_ville = document.querySelector('#changer');
 
 
 function recevoirTemperature(ville){
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=9745b272e6f312ca99794a979760245c&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=secreyKey&units=metric`;
     requette.open('get', url);
     requette.responseType = 'json';
     requette.send();
