@@ -48,3 +48,32 @@ changer_ville.addEventListener('click', ()=>{
     recevoirTemperature(villeChoisie);
 })
 
+/*
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const apiKey = "9745b272e6f312ca99794a979760245c";
+        const city = "Abidjan";
+
+        // URL de l'API OpenWeatherMap
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+        // Fonction pour récupérer les données météo
+        function recupererMeteo() {
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Mettez à jour les éléments HTML avec les données météo
+                    document.getElementById("weather-description").textContent = `Conditions météo : ${data.weather[0].description}`;
+                    document.getElementById("temperature").textContent = `Température : ${data.main.temp} °C`;
+                    document.getElementById("weather-city").textContent = `Ville : ${data.name} °C`;
+                    console.log(data)
+                })
+                .catch(error => {
+                    console.error("Erreur lors de la récupération des données météo :", error);
+                });
+        }
+
+        // Appel de la fonction pour récupérer les données météo
+        recupererMeteo();
+    });
+</script>*/
