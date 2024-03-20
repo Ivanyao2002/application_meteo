@@ -15,6 +15,7 @@ const requette = new XMLHttpRequest();
 let temperature_label = document.querySelector('#temperature_label');
 let ville_label = document.querySelector('#ville');
 let changer_ville = document.querySelector('#changer');
+let villeChoisie;
 
 
 function recevoirTemperature(ville){
@@ -41,7 +42,14 @@ function recevoirTemperature(ville){
     }
 }
 
-recevoirTemperature('Paris');
+if (geolocation in navigator){
+
+}
+else{
+    recevoirTemperature('Abidjan');
+}
+
+
 
 changer_ville.addEventListener('click', ()=>{
     let villeChoisie = prompt('Veuillez choisir une ville : ');
